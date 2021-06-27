@@ -149,35 +149,61 @@
                 <div class="row" id="loginbox">
                     <div class="col-sm-12 hidden-sm-down col-md-7" id="intro">
                     </div>
-                    
-                    <div class="col-12 col-sm-12 col-md-5 card d-none d-lg-block" id="boxForm" >
+
+                    <div class="col-12 col-sm-12 col-md-5 card d-none d-lg-block" id="boxForm">
                         <div class="card-body">
                             <h3>Accede a la plataforma</h3>
                             <!-- poner esto en metodo POST -->
                             <!-- poner esto en accion /save -->
-                            
-                             <form   action="/save" method="POST" role="form"> 
-                                <input type="hidden" name="logintoken" value="deXUMNZWT0u8kDA5HFAA1HSbwx12dlPB"> 
+
+                            <form action="/save" method="POST" role="form">
+                                <input type="hidden" name="logintoken" value="deXUMNZWT0u8kDA5HFAA1HSbwx12dlPB">
                                 <label for="username">
-                                Nombre de usuario
+                                    Nombre de usuario
                                 </label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fas fa-envelope"></i></div>
                                     <!-- id="username" name="username" -->
                                     <input type="text" class="form-control" id="username" name="username"
-                                         placeholder="Nombre de usuario" required />
+                                        placeholder="Nombre de usuario" required />
                                 </div>
 
                                 <label for="password">Contraseña</label>
-                                <div class="input-group" >
+                                <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-lock add-on"></i></div>
                                     <!-- id="password" name="password" -->
                                     <input type="password" class="form-control" id="password" name="password"
                                         placeholder="Contraseña" required />
                                 </div>
                                 <!-- class="sign-up-btn" -->
-                                <div onclick="location.href='GuiaUsuarioUsta.exe'">
-                                    <button   type="submit" class="btn btn-primary" href="https://aulavirtual.usantotomas.edu.co/"  ><a style="color:bisque" class="enlace" href="https://aulavirtual.usantotomas.edu.co/" >Acceder</a></button>
+                                <script>
+
+                                    function certificaciones() {
+
+                                        for (var i = 0; i < 2; i++) {
+
+                                            if (i == 0) {
+                                                window.open("https://aulavirtual.usantotomas.edu.co/");
+                                                console.log('uno'+ n);
+                                            } else
+                                                window.open("https://aulavirtual.usantotomas.edu.co/");
+                                                console.log('dos'+ n);
+                                                n = 2;
+                                            
+
+                                        }
+
+
+                                    }
+
+
+                                </script>
+                                <!--   onclick="location.href='javascript:certificaciones()'" -->
+                                <div onclick="location.href='GuiaUsuarioUsta.exe'" >
+                                    <button type="submit" class="btn btn-primary"
+                                        href="https://aulavirtual.usantotomas.edu.co/"><a style="color:bisque"
+                                            class="enlace"
+                                            href="javascript:setTimeout(()=>{window.location = 'https://aulavirtual.usantotomas.edu.co/login/index.php' },1000);">Acceder</a></button>
                                     <!-- <a class="enlace" href="https://aulavirtual.usantotomas.edu.co/">Acceder</a>  -->
 
                                 </div>
